@@ -83,3 +83,9 @@ table select{
     border-radius: 10px;
     background-color: white;
 }
+#result{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
