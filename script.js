@@ -51,7 +51,6 @@ function showQuize() {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             let i = 0;
             nextbtn.addEventListener("click", function () {
                 i++;

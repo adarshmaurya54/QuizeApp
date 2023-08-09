@@ -7,13 +7,16 @@
 }
 body{
     background-color: #001e4d;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .quize{
     width: 90%;
     background-color: #fff;
     max-width: 600px;
     border-radius: 10px;
-    margin: 100px auto 0;
     padding: 20px;
 }
 .quize h1{
