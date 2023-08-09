@@ -27,7 +27,7 @@ body{
     font-weight: 400;
 }
 .content{
-    display: none;
+    /* display: none; */
 }
 .content h2{
     font-size: 1em;
@@ -67,17 +67,15 @@ body{
     padding: 10px 30px;
     border-radius: 10px;
 }
-.user-selection{
+table{
     margin-bottom: 20px;
 }
-.categories{
-    margin-bottom: 10px;
-}
-.user-selection label{
+table label{
     font-size: 1.2em;
 }
-.user-selection select{
+table select{
     outline: none;
+    width: 90%;
     padding: 10px;
     border-radius: 10px;
     background-color: white;

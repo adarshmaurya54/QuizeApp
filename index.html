@@ -13,20 +13,28 @@
     <div class="quize">
         <h1>Simple Quize</h1>
         <div class="content">
-            <div class="user-selection">
-                <div class="categories">
-                    <label>Choose category : </label>
-                    <select onchange="showQuize()" id="category">
-                        <option value="none">Mixed</option>
-                    </select>
-                </div>
-                <div class="Limit">
-                    <label>Choose Limit : </label>
-                    <select onchange="showQuize()" id="limit">
-                        
-                    </select>
-                </div>
-            </div>
+            <table>
+                <tr>
+                    <td>
+                        <label>Choose category</label>
+                    </td>
+                    <td> : 
+                        <select onchange="showQuize()" id="category">
+                            <option value="none">Mixed</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Choose Limit</label>
+                    </td>
+                    <td> : 
+                        <select onchange="showQuize()" id="limit">
+                            
+                        </select>
+                    </td>
+                </tr>
+            </table>
             <h2 id="Question"></h2>
             <div id="answer-buttons">
 
@@ -36,7 +44,7 @@
             <button>Next</button>
         </div>
         <div id="result">
-            Your score is 4 out of 5.
+            <!-- Your score is 4 out of 5. -->
         </div>
     </div>
     <script src="script.js"></script>

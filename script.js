@@ -59,17 +59,19 @@ function showQuize() {
                     Quize(data,i);
                 }else{
                     let percetage = (score * 100)/limit.value;
-                    if(percetage <= 25){
-                        document.getElementById("result").innerHTML = emoji[0];
+                    document.querySelector(".content").style.display = "none";
+                    nextbtn.style.display = "none";
+                    if(percetage < 25){
+                        document.getElementById("result").innerHTML = "Your score is " + score + " out of " + limit.value + " " + emoji[0];
                         
-                    } else if(percetage <= 50){
-                        document.getElementById("result").innerHTML = emoji[1];
+                    } else if(percetage < 50){
+                        document.getElementById("result").innerHTML = "Your score is " + score + " out of " + limit.value + " " + emoji[1];
                         
-                    }else if(percetage <= 75){
-                        document.getElementById("result").innerHTML = emoji[2];
+                    }else if(percetage < 75){
+                        document.getElementById("result").innerHTML = "Your score is " + score + " out of " + limit.value + " " + emoji[2];
                         
                     }else{
-                        document.getElementById("result").innerHTML = emoji[3];
+                        document.getElementById("result").innerHTML = "Your score is " + score + " out of " + limit.value + " " + emoji[3];
 
                     }
                 }
