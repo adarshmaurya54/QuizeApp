@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#001e4d">
+    <title>Quize App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="quize">
+        <h1>Simple Quize</h1>
+        <div class="content">
+            <div class="user-selection">
+                <div class="categories">
+                    <label>Choose category : </label>
+                    <select onchange="showQuize()" id="category">
+                        <option value="none">Mixed</option>
+                    </select>
+                </div>
+                <div class="Limit">
+                    <label>Choose Limit : </label>
+                    <select onchange="showQuize()" id="limit">
+                        
+                    </select>
+                </div>
+            </div>
+            <h2 id="Question"></h2>
+            <div id="answer-buttons">
+
+            </div>
+        </div>
+        <div class="next-btn" id="next">
+            <button>Next</button>
+        </div>
+        <div id="result">
+            Your score is 4 out of 5.
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #001e4d;
+}
+.quize{
+    width: 90%;
+    background-color: #fff;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 100px auto 0;
+    padding: 20px;
+}
+.quize h1{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    user-select: none;
+    font-weight: 400;
+}
+.content{
+    display: none;
+}
+.content h2{
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.content .btn{
+    width: 100%;
+    margin: 20px 0;
+    height: 100%;
+    min-height: 40px;
+    display: block;
+    text-align: left;
+    padding: 5px 20px;
+    font-weight: bold;
+    font-size: 0.8em;
+    background-color: white;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.content .btn:hover{
+    background-color: #001e4d;
+    color: white;
+}
+.next-btn{
+    display: none;
+    text-align: center;
+    margin: 20px;
+}
+.next-btn button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #001e4d;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.user-selection{
+    margin-bottom: 20px;
+}
+.categories{
+    margin-bottom: 10px;
+}
+.user-selection label{
+    font-size: 1.2em;
+}
+.user-selection select{
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
