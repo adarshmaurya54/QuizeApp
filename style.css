@@ -89,3 +89,19 @@ table select{
     font-weight: bold;
     text-align: center;
 }
+.answers{
+    position: relative;
+}
+.result-icon{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.result-icon i{
+    display: none;
+}
+
+.show{
+    display: block!important;
+}

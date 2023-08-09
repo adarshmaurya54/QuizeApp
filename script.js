@@ -8,6 +8,7 @@ const answerButtons = document.getElementById("answer-buttons");
 const question = document.getElementById("Question");
 const btns = document.getElementsByClassName("btn");
 const nextbtn = document.querySelector("#next button");
+const next = document.getElementById("next");
 const emoji = ["😢","😃","🤩","🥳"];
 let score = 0;
 for (let i = 0; i < categroyarr.length; i++) {
@@ -32,8 +33,8 @@ function Quize(data, i) {
     }
     for (const key in data[i].answers) {
         if (data[i].answers[key] != null) {
-            answerButtons.innerHTML += `<button onclick="isCorrect('id${j}')" class="btn" id="id${j}"></button>`;
-            document.getElementById("id" + j).innerText = data[i].answers[key];
+            answerButtons.innerHTML += `<button onclick="isCorrect('id${j}',${i})" class="btn" id="id${j}"></button>`;
+            document.getElementById("id" + j).innerText += data[i].answers[key];
             j++;
         }
     }
@@ -51,8 +52,11 @@ function showQuize() {
     fetch(url)
         .then(response => response.json())
         .then(data => {
+            console.log(data);
             let i = 0;
             nextbtn.addEventListener("click", function () {
+                answerButtons.style.cursor = "default";
+                next.style.display = "none";
                 i++;
                 if(i < data.length){
                     Quize(data,i);
@@ -97,7 +101,6 @@ function addClassToCorrectAnswer(data) {
 }
 function isCorrect(id) {
     let answer = document.getElementById(id);
-    let next = document.getElementById("next");
     let correct_answer = document.getElementsByClassName("correct-answer")[0];
     if (answer.classList[1] == 'correct-answer') {
         answer.style.backgroundColor = "#198754eb";
