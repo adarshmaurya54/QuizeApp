@@ -58,7 +58,7 @@ function showQuize() {
                 answerButtons.style.cursor = "default";
                 next.style.display = "none";
                 i++;
-                if(i < data.length){
+                if(i < limit.value){
                     Quize(data,i);
                 }else{
                     let percetage = (score * 100)/limit.value;
